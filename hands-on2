@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Aksesibilitas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            color: #35424a;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .content {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #35424a;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header role="banner">
+    <h1>Selamat Datang di Website Kami</h1>
+</header>
+
+<nav role="navigation">
+    <a href="#tentang">Tentang Kami</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#kontak">Kontak</a>
+</nav>
+
+<main class="content" role="main">
+    <section id="tentang" tabindex="0">
+        <h2>Tentang Kami</h2>
+        <p>Kami berkomitmen untuk membuat konten yang dapat diakses oleh semua pengguna. Ini termasuk penggunaan HTML yang semantic dan CSS yang responsif.</p>
+    </section>
+
+    <section id="layanan" tabindex="0">
+        <h2>Layanan Kami</h2>
+        <p>Kami menyediakan berbagai macam layanan yang ramah terhadap semua pengguna, termasuk mereka yang memiliki disabilitas.</p>
+    </section>
+
+    <section id="kontak" tabindex="0">
+        <h2>Kontak Kami</h2>
+        <p>Jika Anda memiliki pertanyaan, silakan <a class="btn" href="mailto:info@example.com">Hubungi Kami</a>.</p>
+    </section>
+</main>
+
+<footer role="contentinfo">
+    <p>&copy; 2023 Website Kami. Semua Hak Dilindungi.</p>
+</footer>
+
+</body>
+</html>
